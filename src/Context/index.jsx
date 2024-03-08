@@ -6,7 +6,7 @@ export const ShoppingCartContext = createContext();
 export const ShoppingCartProvider = ({children})=>{
     //shoppindcart - Increment quantity
     const [count, setCount] = useState(0);
-    console.log('count',count)
+    //console.log('count',count)
 
     //Product detail - Open/Close
     const [isProductDetailOpen, setIsProductDetailOpen] = useState(false)
@@ -32,6 +32,9 @@ export const ShoppingCartProvider = ({children})=>{
     const urlAPI = 'https://api.escuelajs.co/api/v1';
     const fakestoreapi = 'https://fakestoreapi.com';
     const data = useFetch(`${urlAPI}/products`);
+    //const data = useFetch(`'https://api.escuelajs.co/api/v1'products`);
+    //console.log(data)
+    
 
     //search state, filtrar products
     const [filteredItems, setFilteredItems] = useState(null)

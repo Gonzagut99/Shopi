@@ -30,6 +30,7 @@ export const useFetch = (apiUrl) => {
         //     setData(data);
         //   };
         //fetchDataAsync();
+        console.log(data)
     }, [apiUrl]);
 
 	return data;
